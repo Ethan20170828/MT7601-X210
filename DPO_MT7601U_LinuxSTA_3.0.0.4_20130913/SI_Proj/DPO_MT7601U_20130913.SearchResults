@@ -1,0 +1,20 @@
+---- module_init Matches (1 in 1 files) ----
+Usb_main_dev.c (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\os\linux):module_init(rtusb_init);
+---- 0x7601 Matches (2 in 2 files) ----
+Chip_id.h (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\include\chip):#define NIC7601_PCIe_DEVICE_ID 0x7601
+Rtusb_dev_id.c (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\common):	{USB_DEVICE(0x148f,0x7601)}, /* MT 6370 */
+---- INF_MAIN_DEV_NAME Matches (3 in 2 files) ----
+Rtmp_def.h (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\include):#define INF_MAIN_DEV_NAME		"wlan"
+Rtmp_def.h (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\include):#define INF_MAIN_DEV_NAME		"ra"
+Rtmp_init_inf.c (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\common):					INT_MAIN, 0, sizeof(PRTMP_ADAPTER), INF_MAIN_DEV_NAME);
+---- RtmpOSNetDevCreate Matches (4 in 4 files) ----
+Rtmp_init_inf.c (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\common):	pDevNew = RtmpOSNetDevCreate((INT32)MC_RowID, (UINT32 *)&IoctlIF,
+Rt_linux.c (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\os\linux):PNET_DEV RtmpOSNetDevCreate(
+Rt_linux_symb.c (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\os\linux):EXPORT_SYMBOL(RtmpOSNetDevCreate);
+Rt_os_util.h (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\include):PNET_DEV RtmpOSNetDevCreate(
+---- RtmpPhyNetDevMainCreate Matches (3 in 3 files) ----
+Cmm_cfg.c (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\common):			*(VOID **)pData = RtmpPhyNetDevMainCreate(pAd);
+Rtmp_init_inf.c (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\common):PNET_DEV RtmpPhyNetDevMainCreate(
+Rt_os_net.h (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\include):PNET_DEV RtmpPhyNetDevMainCreate(VOID *pAd);
+---- WIFI_MODE Matches (1 in 1 files) ----
+Cmm_cfg.c (c:\winshare\s5pv210\project\wifi\mt7601\dpo_mt7601u_linuxsta_3.0.0.4_20130913\common):static BOOLEAN wmode_valid(RTMP_ADAPTER *pAd, enum WIFI_MODE wmode)
